@@ -13,4 +13,6 @@
 #include <../../StereoPipeline/src/asp/Core/StereoSettings.h>
 #include <../../StereoPipeline/src/asp/Core/Macros.h>
 
+#include <https://github.com/iBeanSoftware/iBS_LIB/blob/master/UTF-8_String.h>
+
 #endif//__ASP_CORE_H__
