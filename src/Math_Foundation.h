@@ -15,7 +15,7 @@
 #define iBS_Math_Foundation_h
 
 #include <vector>
-//#include <sstream>
+#include <sstream>
 //#include <fstream>
 
 const int Math_Foundation_MAJOR_VERSION = 0;
@@ -24,6 +24,30 @@ const int Math_Foundation_MINOR_VERSION = 1;
 namespace iBS 
 {
   #define digit uint8_t
+  
+  struct real_number
+  {
+    real_number():ref(1){zero();};
+    ~real_number(){if(ref.size()) ref.clear();};
+    
+    void set(short v){};
+    void set(long v){};
+    void set(float v){};
+    void set(double v){};
+    void set(long long int v){};
+    std::string str()
+    {
+        if(!ref.size()) { return ""; }
+        std::stringstream result;
+        try { for (size_t i=0; i<ref.size(); ++i) 
+            { result<< char(ref[i]); } } 
+        catch (...) { return "read number error"; }
+        return result.str();
+    };
+    void zero(){if(ref.size()==1) {ref[0]='0';} else {if(ref.size()) ref.clear(); ref.push_back('0');}}
+    private:
+    std::vector<digit> ref;
+  }
 
 }
 #endif // iBS_Math_Foundation_h
