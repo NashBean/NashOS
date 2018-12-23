@@ -35,6 +35,14 @@ namespace iBS
     void set(float v){};
     void set(double v){};
     void set(long long int v){};
+    
+    bool  is_signed()
+    {
+        if(ref.size()==0) return false;
+        else if(ref[0]=='+'||ref[0]=='-') return true;
+        else    return false;
+    };   
+
     std::string str()
     {
         if(!ref.size()) { return ""; }
@@ -45,7 +53,9 @@ namespace iBS
         return result.str();
     };
     void zero(){if(ref.size()==1) {ref[0]='0';} else {if(ref.size()) ref.clear(); ref.push_back('0');}}
+    
     private:
+    size_t dec_index;
     std::vector<digit> ref;
   };
   
