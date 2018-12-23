@@ -47,6 +47,11 @@ namespace iBS
     void zero(){if(ref.size()==1) {ref[0]='0';} else {if(ref.size()) ref.clear(); ref.push_back('0');}}
     private:
     std::vector<digit> ref;
+  };
+  
+  public void add(real_number& n1, real_number& n2)
+  {
+    //todo
   }
 
 }
