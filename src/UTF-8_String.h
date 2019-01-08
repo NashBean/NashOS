@@ -1,44 +1,3 @@
-
-Skip to content
-
-    Why GitHub?
-                          
-
-
-                    
-Enterprise
-Explore
-                      
-
-                    
-Marketplace
-Pricing
-                       
-
-
-                        
-
-Sign in
-Sign up
-
-1
-0
-
-    0
-
-iBeanSoftware/iBS_LIB
-Code
-Issues 0
-Pull requests 0
-Projects 0
-Insights
-Join GitHub today
-
-GitHub is home to over 28 million developers working together to host and review code, manage projects, and build software together.
-iBS_LIB/UTF-8_String.h
-0287391 12 days ago
-@NashBean NashBean added typedef to u8char and u8text
-467 lines (415 sloc) 14.1 KB
 //
 //  UTF-8_String.h
 //
@@ -74,6 +33,7 @@ iBS_LIB/UTF-8_String.h
 #include <sstream>
 #include <fstream>
 #include <cwchar>
+#include <core.h>
 
 const int UTF8Str_MAJOR_VERSION = 3;
 const int UTF8Str_MINOR_VERSION = 4;
@@ -503,20 +463,3 @@ namespace iBS
 
 
 #endif // iBS_UTF_8_String_h
-
-
-    © 2019 GitHub, Inc.
-    Terms
-    Privacy
-    Security
-    Status
-    Help
-
-    Contact GitHub
-    Pricing
-    API
-    Training
-    Blog
-    About
-
-Press h to open a hovercard with more details.
